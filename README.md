@@ -1,6 +1,6 @@
 # **IoT Bootcamp DiLo Tangerang**
 
-![Lintang_DiLo](./Dilo.png)
+![Lintang_DiLo](./DiLo.png)
 
 #
 
