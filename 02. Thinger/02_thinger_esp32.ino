@@ -1,6 +1,7 @@
-// library ESP8266
-#include <ESP8266WiFi.h>
-#include <ThingerESP8266.h>
+
+// library ESP32
+#include <WiFi.h>
+#include <ThingerESP32.h>
 
 #define USERNAME "Lintang_Wisesa"
 #define DEV_ID "lintang"
@@ -9,7 +10,7 @@
 #define SSID "DILO3"
 #define PASS "DiloBSD123"
 
-ThingerESP8266 thing(USERNAME, DEV_ID, DEV_CRED);
+ThingerESP32 thing(USERNAME, DEV_ID, DEV_CRED);
 
 void setup(){
     pinMode(D5, OUTPUT);
