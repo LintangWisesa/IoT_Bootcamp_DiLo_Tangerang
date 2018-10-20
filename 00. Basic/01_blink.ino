@@ -8,5 +8,3 @@ void loop(){
     digitalWrite(LED_BUILTIN, LOW);
     delay(1000);
 }
-
-// DILO 3 = DiloBSD123
