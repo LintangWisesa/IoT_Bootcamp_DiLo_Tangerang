@@ -1,5 +1,7 @@
 # **IoT Bootcamp DiLo Tangerang**
 
+### IoT Bootcamp DiLo Tangerang 13, 20 & 27 October 2018
+
 ![Lintang_DiLo](./DiLo.png)
 
 #
