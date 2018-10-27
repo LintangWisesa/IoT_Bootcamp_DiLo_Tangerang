@@ -2,11 +2,17 @@
 #include <ESP8266HTTPClient.h>
 WiFiClient client;
 
+#include "DHT.h"
+#define DHTpin D2
+#define DHTtype DHT11
+DHT dht(DHTpin, DHTtype)
+
 const char* wifi = "DILO3";
 const char* pass = "DiloBSD123";
 
 void setup(){
     Serial.begin(115200);
+    pinMode(D5, OUTPUT);
     WiFi.begin(wifi, pass);
     while(WiFi.status() != WL_CONNECTED){
         delay(500);
@@ -17,6 +23,7 @@ void setup(){
 
 void uploadData(int suhu, int lembab, int analog){
     if(WiFi.status() == WL_CONNECTED){
+        digitalWrite(D5, HIGH);
         HTTPClient http;
         http.begin("http://nameless-everglades-17984.herokuapp.com/iot");
         http.addHeader("Content-Type", "application/json");
@@ -31,13 +38,14 @@ void uploadData(int suhu, int lembab, int analog){
     } else {
         Serial.println("Koneksi terputus!");
     }
-    delay(1000);
+    delay(3000);
+    digitalWrite(D5, LOW);
 }
 
 void loop(){
-    int suhu = 26;
-    int lembab = 11;
-    int analog = 1992;
+    int suhu = dht.readTemperature();
+    int lembab = dht.readHumidity();
+    int analog = analogRead(A0);
     uploadData(suhu, lembab, analog);
     delay(15000);
 }
