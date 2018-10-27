@@ -1,7 +1,7 @@
 
-// library ESP8266
-#include <ESP8266WiFi.h>
-#include <ThingerESP8266.h>
+// library ESP32
+#include <WiFi.h>
+#include <ThingerESP32.h>
 
 // initial setup DHT
 #include "DHT.h"
