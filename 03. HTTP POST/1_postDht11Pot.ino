@@ -7,8 +7,8 @@ WiFiClient client;
 #define DHTtype DHT11
 DHT dht(DHTpin, DHTtype)
 
-const char* wifi = "DILO3";
-const char* pass = "DiloBSD123";
+const char* wifi = "DILO3";         // nama ssid wifi
+const char* pass = "DiloBSD123";    // password wifi
 
 void setup(){
     Serial.begin(115200);
@@ -25,7 +25,8 @@ void uploadData(int suhu, int lembab, int analog){
     if(WiFi.status() == WL_CONNECTED){
         digitalWrite(D5, HIGH);
         HTTPClient http;
-        http.begin("http://nameless-everglades-17984.herokuapp.com/iot");
+        http.begin("http://nameless-everglades-17984.herokuapp.com/iot");   
+        // URL API endpoint backend
         http.addHeader("Content-Type", "application/json");
         String body = "{\"suhu\": " + String(suhu) + ", \"lembab\": " + String(lembab) + ", \"analog\": " + String(analog) + "}";
         int httpPost = http.POST(body);
