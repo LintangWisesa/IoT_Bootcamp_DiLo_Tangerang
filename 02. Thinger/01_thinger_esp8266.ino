@@ -2,7 +2,7 @@
 #include <ESP8266WiFi.h>
 #include <ThingerESP8266.h>
 
-#define USERNAME "Lintang_Wisesa"
+#define USERNAME "Lintang_Wisesa"   // username ada di pojok kanan atas dashboard
 #define DEV_ID "lintang"
 #define DEV_CRED "lintang"
 
