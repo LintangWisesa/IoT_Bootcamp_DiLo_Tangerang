@@ -17,7 +17,7 @@
 
 #
 
-![Lin_DiLo](./DiLo_IoT_Oct.png)
+![Lin_DiLo](./DiLo_IoT_Oct.jpg)
 
 #
 
