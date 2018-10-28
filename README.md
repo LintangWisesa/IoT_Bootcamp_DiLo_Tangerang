@@ -17,6 +17,10 @@
 
 #
 
+![Lin_DiLo](./DiLo_IoT_Oct.png)
+
+#
+
 #### Lintang Wisesa :love_letter: _lintangwisesa@ymail.com_
 
 [Facebook](https://www.facebook.com/lintangbagus) | 
