@@ -9,7 +9,7 @@
 #define DHTtype DHT11
 DHT dht(DHTpin, DHTtype)
 
-#define USERNAME "Lintang_Wisesa"
+#define USERNAME "Lintang_Wisesa"   // username ada di pojok kanan atas dashboard
 #define DEV_ID "lintang"
 #define DEV_CRED "lintang"
 
