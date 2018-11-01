@@ -3,5 +3,5 @@ void setup(){
 }
 
 void loop(){
-    analogWrite(D5, analogRead(A0)/4)
+    analogWrite(D5, analogRead(A0)/4);
 }
